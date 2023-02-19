@@ -4,8 +4,8 @@ import { BiSearch } from 'react-icons/bi';
 function Search() {
   return (
     <>
-      <div class="flex justify-between px-3 py-3 border-none bg-lightBlue rounded-2xl focus:ring-grey-500 focus:ring-2">
-        <BiSearch class="text-5xl text-blue" />
+      <div className="flex justify-between px-3 py-3 mt-10 gap-2 border-none bg-lightBlue rounded-2xl focus:none">
+        <BiSearch className="text-5xl text-blue font-thin" />
         <form action="">
           <input
             type="text"
@@ -13,10 +13,15 @@ function Search() {
             placeholder="Search Github Username..."
             autoComplete="off"
             aria-label="Search Github"
-            class="w-80 py-2 font-semibold bg-lightBlue border-none text-lg text-white"
+            className="min-w-full py-2 font-semibold bg-lightBlue border-none text-lg text-white focus:outline-none"
           />
         </form>
-        <div></div>
+        <button
+          className="bg-blue p-2 border-none rounded-xl w-32"
+          onClick={console.log('Hello, you click me')}
+        >
+          Search
+        </button>
       </div>
     </>
   );
