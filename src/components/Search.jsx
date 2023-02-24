@@ -16,10 +16,7 @@ function Search() {
             className="min-w-full py-2 font-semibold bg-lightBlue border-none text-lg text-white focus:outline-none"
           />
         </form>
-        <button
-          className="bg-blue p-2 border-none rounded-xl w-32"
-          onClick={console.log('Hello, you click me')}
-        >
+        <button className="bg-blue p-2 border-none rounded-xl w-32">
           Search
         </button>
       </div>
