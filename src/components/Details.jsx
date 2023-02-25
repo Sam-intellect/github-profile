@@ -5,7 +5,7 @@ function Details(username) {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    username = 'm';
+    username = 'Sam-intellect';
     async function fetchUserData() {
       const response = await fetch(`https://api.github.com/users/${username}`);
       const data = await response.json();
