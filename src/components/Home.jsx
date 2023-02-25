@@ -8,7 +8,7 @@ function Home() {
     <>
       <div className="container mx-auto px-8 py-8">
         <Header />
-        <Search />
+        <Search handleSearch={handleSearch} />
         <Details />
       </div>
     </>

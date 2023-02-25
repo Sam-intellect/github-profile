@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
 
-function Search(handleSearch) {
+function Search({ handleSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     handleSearch(searchTerm);
+    console.log(searchTerm);
   };
   return (
     <>
