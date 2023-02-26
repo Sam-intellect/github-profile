@@ -2,15 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { BsLink45Deg, BsTwitter, BsLinkedin } from 'react-icons/bs';
 
 function Details(username) {
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState('');
 
   useEffect(() => {
-    username = 'Sam-intellect';
+    username = 'sam-intellect';
     async function fetchUserData() {
       const response = await fetch(`https://api.github.com/users/${username}`);
       const data = await response.json();
       setUserData(data);
-      console.log(data);
     }
     fetchUserData();
   }, [username]);
@@ -47,10 +46,6 @@ function Details(username) {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
-                // hour: 'numeric',
-                // minute: 'numeric',
-                // second: 'numeric',
-                // timeZone: 'UTC',
               })}
             </p>
           </div>
